@@ -20,7 +20,7 @@ namespace LuckySpin
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
+                    name: "defaults",
                     pattern: "{controller}/{action}/{luck:int?}",
                     defaults: new { controller = "Spinner", action = "Index" });
             });
